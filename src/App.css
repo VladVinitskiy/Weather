@@ -1,33 +1,231 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: "Open Sans", serif;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(45,176,224,1);
+    background: -moz-linear-gradient(-135deg, rgba(255,193,7,0.9) 0%, rgba(96,40,168,1) 100%);
+    /*background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(45,176,224,1)), color-stop(100%, rgba(96,40,168,1)));*/
+    background: -webkit-linear-gradient(-135deg, rgba(255,193,7,0.9), rgba(96,40,168,1) 100%);
+    background: -o-linear-gradient(-135deg, rgba(255,193,7,0.9) 0%, rgba(96,40,168,1) 100%);
+    background: -ms-linear-gradient(-135deg, rgba(255,193,7,0.9) 0%, rgba(96,40,168,1) 100%);
+    background: linear-gradient(-135deg, rgba(255,193,7,0.9) 0%, rgba(96,40,168,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db0e0', endColorstr='#6028a8', GradientType=1 );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main {
+    height: 65vh;
+    background: #2a6bb1;
+    box-shadow: 0px 2px 80px -20px rgba(0,0,0,0.5);
+    width: 59%;
+    margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.Row{
+    display: flex;
+}
+.info {
+    height: 65vh;
+    background: url("https://itproger.com/img/courses/1538665284.jpg") center center no-repeat;
+    background-blend-mode: overlay;
+    background-color: #484747;
+    border: 2px solid #1f1f1f;
+    border-right: 2px solid #131e29;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 65vh;
+    padding:0 20px;
+    border-top: 2px solid #113a65;
+    border-bottom: 2px solid #113a65;
+    border-right: 2px solid #113a65;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 2px #113a65;
+    width: 55%;
+    padding-bottom: 4px;
+    color: #fff;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    font-size: 36px;
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #103a65;
+}
+
+input::-moz-placeholder {
+    color: #103a65;
+}
+
+button {
+    border: 2px solid #103a65;
+    padding: 8px 20px;
+    margin: 0 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #235d9c;
+    color: #fff;
+    outline: none!important;
+    font-size: 24px;
+    transition: .6s;
+    float: right;
+}
+
+button:hover {
+    border-color: rgba(255,210,75,.4);
+}
+
+button:active {
+    border-bottom: 2px solid transparent;
+    border-color: transparent;
+    position: relative;
+    top: 2px;
+}
+
+.info h2 {
+    font-size: 4.5em;
+    color: #ffd24b;
+}
+
+.info p {
+    color: #e4e4e4;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.infoWeath {
+    width: 100%;
+    font-size: 10px;
+    color: #fff;
+}
+
+.infoWeath  h3{
+    text-align: center;
+    font-size: 4rem;
+    margin:0;
+}
+
+.error {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.wrap{
+    line-height: 60px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+form{margin: 0 20px;}
+h6{
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 30px auto 0;
+}
+
+@media (max-width: 1919px){
+    .main{height: 60vh;}
+    .info{height: 60vh;}
+    .info h2 {font-size: 3.5em;}
+    .info p {font-size: 24px;}
+    .form{
+        padding-left: 30px;
+        height: 60vh;
+    }
+    input[type="text"] {
+        margin-bottom: 20px;
+        margin-right: 40px;
+        font-size: 32px;
+    }
+    button{font-size:16px ;}
+    form{margin-bottom: 20px;}
+    .infoWeath h3 {
+        font-size: 3.5rem;
+        margin-bottom: 25px
+    }
+    .wrap{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1439px){
+    .main{height: 60vh;}
+    .info{height: 60vh;}
+    .info h2 {font-size: 2.5em;}
+    .info p {font-size: 18px;}
+    .form{
+        padding-left: 25px;
+        height: 60vh;
+    }
+    input[type="text"] {
+        margin-bottom: 0;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    button{font-size:12px ;}
+    form{margin-bottom: 20px;}
+    .infoWeath h3 {
+        font-size: 2.5rem;
+        margin-bottom: 20px
+    }
+    .wrap{
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1023px){
+    .main{height: 50vh;
+        width: 85%;}
+    .info{height: 50vh;}
+    .info h2 {font-size: 2.5em;}
+    .info p {font-size: 18px;}
+    .form{
+        padding-left: 20px;
+        height: 50vh;
+    }
+    input[type="text"] {
+        margin-bottom: 0;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    button{font-size:12px ;}
+    form{margin-bottom: 20px;}
+    .infoWeath h3 {
+        font-size: 2.5rem;
+        margin-bottom: 20px
+    }
+    .wrap{
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
 }

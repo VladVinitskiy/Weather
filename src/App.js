@@ -37,8 +37,8 @@ export default class App extends Component{
                     minTemp:data.main.temp_min.toFixed(0),
                     maxTemp:data.main.temp_max.toFixed(0),
                     city:data.name,
-                    sunrise:new Date(data.sys.sunrise*1000).toLocaleTimeString().slice(3),
-                    sunset:new Date(data.sys.sunset*1000).toLocaleTimeString().slice(3),
+                    sunrise:new Date(data.sys.sunrise*1000).toLocaleTimeString().slice(0, -3),
+                    sunset:new Date(data.sys.sunset*1000).toLocaleTimeString().slice(0, -3),
                     main:data.weather[0].main,
                     description:data.weather[0].description,
                     error:''

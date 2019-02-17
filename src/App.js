@@ -29,7 +29,7 @@ export default class App extends Component{
         if (city){
             try {
                 const api_url = await
-                    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+                    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
                 const data = await api_url.json();
                 // console.log(data);
                 this.setState({

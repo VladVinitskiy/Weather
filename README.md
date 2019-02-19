@@ -4,7 +4,7 @@ In the project directory, you can run application, that can give information abo
 
 ## Deployment
 
-This project has moved here: https://wea-ther.herokuapp.com
+This project has moved here: https://wea-ther.herokuapp.com If the site will be loaded for a long time, please wait for the heroku wake up
 
 ### `npm start`
 

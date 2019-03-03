@@ -1,4 +1,4 @@
-## Available Scripts
+## Description about project
 
 In the project directory, you can run application, that can give information about weather in some city.
 
